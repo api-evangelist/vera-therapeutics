@@ -1,8 +1,23 @@
 aid: vera-therapeutics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vera-therapeutics.png
 name: Vera Therapeutics
-description: 'Vera Therapeutics is a company surfaced as a portfolio company of gv and added to the API
-  Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Vera Therapeutics is a clinical- and commercial-stage biopharmaceutical company based in
+  Brisbane, California, developing treatments for serious immunological and inflammatory diseases of the
+  kidney. Its lead program, atacicept (marketed as TRUTAKNA), is a dual BAFF/APRIL inhibitor for IgA
+  nephropathy (IgAN). Surfaced as a portfolio company of GV and added to the API Evangelist network for
+  enrichment, Vera Therapeutics publishes a corporate and patient-facing website (veratx.com) but exposes
+  no public developer portal, API, SDKs, or machine-readable API surface. Sector: life-sciences.'
 url: https://raw.githubusercontent.com/api-evangelist/vera-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Life Sciences
+- Biopharmaceutical
+- Pharmaceuticals
+- Nephrology
+- Immunology
+- Healthcare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/vera-therapeutics-domain-security.yml
 - type: Website
-  url: http://veratx.com
+  url: https://veratx.com
+- type: About
+  url: https://veratx.com/our-company/
+- type: TermsOfService
+  url: https://veratx.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://veratx.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
